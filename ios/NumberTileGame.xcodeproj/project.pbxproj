@@ -34,6 +34,8 @@
 		1A34882518E169AA00D021C3 /* F3HScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34882418E169AA00D021C3 /* F3HScoreView.m */; };
 		1A34882818E1713E00D021C3 /* F3HControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A34882718E1713E00D021C3 /* F3HControlView.m */; };
 		1A92D000191A016600E35C6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A92CFFF191A016600E35C6C /* QuartzCore.framework */; };
+		5B866AE7801858A76621F41C /* libPods-NumberTileGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B6876339910E819D9E4FD9 /* libPods-NumberTileGame.a */; };
+		BD5CA8AE2227A81B00596E14 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5CA8AD2227A81B00596E14 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,10 @@
 		1A34882618E1713E00D021C3 /* F3HControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F3HControlView.h; path = Views/F3HControlView.h; sourceTree = "<group>"; };
 		1A34882718E1713E00D021C3 /* F3HControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F3HControlView.m; path = Views/F3HControlView.m; sourceTree = "<group>"; };
 		1A92CFFF191A016600E35C6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		37B6876339910E819D9E4FD9 /* libPods-NumberTileGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NumberTileGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77787E88BFFCC499D2DCBD90 /* Pods-NumberTileGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumberTileGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-NumberTileGame/Pods-NumberTileGame.release.xcconfig"; sourceTree = "<group>"; };
+		BD5CA8AD2227A81B00596E14 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F66035CB5A9CBFE95CA177D0 /* Pods-NumberTileGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumberTileGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NumberTileGame/Pods-NumberTileGame.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +103,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5CA8AE2227A81B00596E14 /* WebKit.framework in Frameworks */,
 				1A92D000191A016600E35C6C /* QuartzCore.framework in Frameworks */,
 				1A3487B318DEAD6E00D021C3 /* CoreGraphics.framework in Frameworks */,
 				1A3487B518DEAD6E00D021C3 /* UIKit.framework in Frameworks */,
 				1A3487B118DEAD6E00D021C3 /* Foundation.framework in Frameworks */,
+				5B866AE7801858A76621F41C /* libPods-NumberTileGame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +132,7 @@
 				1A3487D818DEAD6E00D021C3 /* NumberTileGameTests */,
 				1A3487AF18DEAD6E00D021C3 /* Frameworks */,
 				1A3487AE18DEAD6E00D021C3 /* Products */,
+				B75EC4AC096E25455EAB85CB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,11 +148,13 @@
 		1A3487AF18DEAD6E00D021C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD5CA8AD2227A81B00596E14 /* WebKit.framework */,
 				1A92CFFF191A016600E35C6C /* QuartzCore.framework */,
 				1A3487B018DEAD6E00D021C3 /* Foundation.framework */,
 				1A3487B218DEAD6E00D021C3 /* CoreGraphics.framework */,
 				1A3487B418DEAD6E00D021C3 /* UIKit.framework */,
 				1A3487D218DEAD6E00D021C3 /* XCTest.framework */,
+				37B6876339910E819D9E4FD9 /* libPods-NumberTileGame.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -230,6 +241,15 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		B75EC4AC096E25455EAB85CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F66035CB5A9CBFE95CA177D0 /* Pods-NumberTileGame.debug.xcconfig */,
+				77787E88BFFCC499D2DCBD90 /* Pods-NumberTileGame.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A3487E218DEAD6E00D021C3 /* Build configuration list for PBXNativeTarget "NumberTileGame" */;
 			buildPhases = (
+				AFC23D16E9B8AB2C69F1E574 /* [CP] Check Pods Manifest.lock */,
 				1A3487A918DEAD6E00D021C3 /* Sources */,
 				1A3487AA18DEAD6E00D021C3 /* Frameworks */,
 				1A3487AB18DEAD6E00D021C3 /* Resources */,
@@ -324,6 +345,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFC23D16E9B8AB2C69F1E574 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NumberTileGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A3487A918DEAD6E00D021C3 /* Sources */ = {
@@ -468,6 +514,7 @@
 		};
 		1A3487E318DEAD6E00D021C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66035CB5A9CBFE95CA177D0 /* Pods-NumberTileGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -485,6 +532,7 @@
 		};
 		1A3487E418DEAD6E00D021C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77787E88BFFCC499D2DCBD90 /* Pods-NumberTileGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
